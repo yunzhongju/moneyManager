@@ -1,0 +1,47 @@
+/* pages/home/components/article/index.wxss */
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-list {
+  display: flex;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  color: #b3b3b3;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #a5a3a3;
+  /* border-top: 1rpx solid #a5a3a3; */
+}
+
+.head text {
+  padding: 0 30rpx;
+}
+
+.content {
+  display: flex;
+  padding-top: 20rpx;
+  padding-left: 30rpx;
+  color: #454344;
+}
+
+.content .info {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  border-bottom: 1rpx solid #b3b3b3;
+  align-content: center;
+  padding: 0 20rpx;
+}

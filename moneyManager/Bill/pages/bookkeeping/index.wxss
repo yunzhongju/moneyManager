@@ -1,0 +1,67 @@
+/* pages/bookkeeping/index.wxss */
+
+.header {
+  background: #33baff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20rpx;
+}
+
+.header .info {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 1rpx solid #000;
+  height: 70rpx;
+  justify-content: space-around;
+}
+
+.header .info text {
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  background: #343233;
+  color: #33baff;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content .item {
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #5c5959;
+  padding-top: 20rpx;
+  margin-top: 10rpx;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 50%;
+  padding-right: 30rpx;
+}
+
+.show-btn {
+  display: flex;
+  width: 100%;
+}
+
+.btn-sty {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-image": "../../dist/image/index",
+    "van-overlay": "../../dist/overlay/index",
+    "van-field": "../../dist/field/index",
+    "van-cell-group": "../../dist/cell-group/index",
+    "van-button": "../../dist/button/index"
+  },
+  "navigationBarTitleText": "记账",
+  "navigationBarTextStyle": "white"
+}

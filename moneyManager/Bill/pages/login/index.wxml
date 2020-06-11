@@ -1,0 +1,13 @@
+<!--pages/login/index.wxml-->
+<view class="login">
+  <van-cell-group>
+    <van-field value="{{ username }}" bind:input="handleUsername" placeholder="请输入用户名" label="用户名" />
+    <van-field value="{{ password}}" type="password" bind:input="handlePassword" placeholder="请输入密码" label="密码" />
+  </van-cell-group>
+
+  <view class="btns">
+    <van-button type="info" square bind:click="login">登录</van-button>
+    <van-button type="info" square bind:click="register">注册</van-button>
+  </view>
+  <van-toast id="van-toast" />
+</view>

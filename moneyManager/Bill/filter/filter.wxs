@@ -1,0 +1,7 @@
+var handleNum = function(num) {
+  return Number(num).toFixed(2)
+}
+
+module.exports = {
+  handleNum: handleNum
+}

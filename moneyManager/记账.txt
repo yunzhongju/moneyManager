@@ -1,0 +1,22 @@
+用户表：
+	id
+	username
+	password
+	
+账单表：
+	id
+	金额
+	日期
+	类型
+	描述
+	用户id
+	目录id
+	
+目录表：
+	id
+	name
+	normal_url
+	selected_url
+	s_url
+	kind
+	

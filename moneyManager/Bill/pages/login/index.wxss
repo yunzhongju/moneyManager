@@ -1,0 +1,8 @@
+/* pages/login/index.wxss */
+.btns{
+  display: flex;
+  justify-content: center;
+}
+.login{
+  margin-top: 50px;
+}

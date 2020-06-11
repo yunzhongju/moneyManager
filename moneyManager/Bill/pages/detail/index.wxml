@@ -1,0 +1,50 @@
+<!--pages/detail/index.wxml-->
+<view class="detail">
+  <view class="header">
+    <van-image width="60" height="60" round src="{{type.selected_url}}" />
+    <text>{{type.name}}</text>
+  </view>
+
+  <view class="info">
+    <view class="item">
+      <text class="label">类型</text>
+      <text wx:if="{{account.type==0}}">收入</text>
+      <text wx:if="{{account.type==1}}">支出</text>
+    </view>
+    <view class="item">
+      <text class="label">金额</text>
+      <text wx:if="{{account.type==0}}">{{account.money}}</text>
+      <text wx:if="{{account.type==1}}">-{{account.money}}</text>
+    </view>
+    <view class="item">
+      <text class="label">日期</text>
+      <text>{{account.date}}</text>
+    </view>
+    <view class="item">
+      <text class="label">备注</text>
+      <text>{{account.desc}}</text>
+    </view>
+  </view>
+  <view class="footer">
+    <text bindtap="onEdit">编辑</text>
+    <text bindtap="onDelete" class="hr" data-id="{{account.id}}">删除</text>
+  </view>
+
+  <van-dialog id="van-dialog" use-slot title="提示" show="{{ show }}" show-cancel-button>
+    <text>确定删除这条记账?</text>
+  </van-dialog>
+
+</view>
+
+<view class="dialog" wx:if="{{isshow}}">
+  <view class="faild">
+    <van-cell-group>
+      <van-field value="{{ money }}" bind:input="handleMoney" placeholder="请输入金额" label="金额" />
+      <van-field value="{{ desc}}" bind:input="handleDesc" placeholder="请输入备注" label="备注" />
+    </van-cell-group>
+  </view>
+  <view class="btn">
+    <text bindtap="handleSure">确定</text>
+    <text bindtap="handleCanle">取消</text>
+  </view>
+</view>

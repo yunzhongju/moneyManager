@@ -1,0 +1,18 @@
+<!--pages/home/components/header/index.wxml-->
+<!-- 引入过滤器 -->
+<wxs src="../../../../filter/filter.wxs" module="filter" />
+<view class="header">
+  <view class="up commom">
+    <text>{{year}}年</text>
+    <text>收入</text>
+    <text>支出</text>
+  </view>
+  <view class="down commom">
+    <text bindtap="handleClick">{{month>9?month:"0"+month}}▼</text>
+    <text>{{filter.handleNum(income)}}</text>
+    <text>{{filter.handleNum(expenditure)}}</text>
+  </view>
+  <van-popup show="{{ show }}" position="bottom" custom-style="height: 50%;">
+    <van-datetime-picker type="year-month" value="{{ currentDate }}" bind:cancel="onClose" bind:confirm="onSure" />
+  </van-popup>
+</view>

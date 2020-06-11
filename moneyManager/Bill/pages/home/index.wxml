@@ -1,0 +1,11 @@
+<!--pages/home/index.wxml-->
+<view class="home">
+  <header income="{{income}}" expenditure="{{expenditure}}" bind:dateeven="headerClick"></header>
+  <view class="notice">
+    <van-notice-bar left-icon="../../assets/icon/laba.png" text="记得每天一小计哦！！！记得每天一小计哦！！！记得每天一小计哦！！！" backgroundColor="#33baff" color="#fff" />
+  </view>
+  <view class="load" wx:if="{{isLoad}}">
+    <van-loading type="spinner" color="#1989fa" />
+  </view>
+  <article data="{{list}}"></article>
+</view>

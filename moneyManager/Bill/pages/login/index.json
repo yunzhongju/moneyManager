@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-field": "../../dist/field/index",
+    "van-cell-group": "../../dist/cell-group/index",
+    "van-button": "../../dist/button/index",
+    "van-toast": "../../dist/toast/index"
+  },
+  "navigationBarTitleText": "登录"
+}

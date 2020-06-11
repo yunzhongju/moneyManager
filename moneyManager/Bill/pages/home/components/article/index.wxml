@@ -1,0 +1,22 @@
+<!--pages/home/components/article/index.wxml-->
+<view class="article">
+  <view class="item" wx:for="{{data}}" wx:if="{{data.length!=0}}">
+    <view class="head">
+      <text>{{item.date}}</text>
+      <view>
+        <text>收入:{{item.income}}</text>
+        <text>支出:{{item.outcome}}</text>
+      </view>
+    </view>
+    <navigator url="../../../../detail/index?aid={{each.id}}" wx:for="{{item.list}}" wx:for-item="each" class="show-list">
+      <view class="content">
+        <van-image width="30" height="30" round src="{{each.img.selected_url}}" />
+        <view class="info">
+          <text>{{each.desc}}</text>
+          <text wx:if="{{each.type=='0'}}">{{each.money}}</text>
+          <text wx:if="{{each.type=='1'}}">-{{each.money}}</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

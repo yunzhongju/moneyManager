@@ -1,0 +1,17 @@
+/* pages/home/index.wxss */
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.notice {
+  margin-top: 47px;
+}
+
+.load {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,10 @@
+/* pages/register/index.wxss */
+
+.btns {
+  display: flex;
+  justify-content: center;
+}
+
+.register {
+  margin-top: 50px;
+}

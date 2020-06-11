@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-image": "../../dist/image/index",
+    "van-dialog": "../../dist/dialog/index",
+    "van-field": "../../dist/field/index",
+    "van-cell-group": "../../dist/cell-group/index"
+  }
+}

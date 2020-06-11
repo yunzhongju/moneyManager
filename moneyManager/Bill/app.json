@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/index/index",
+    "pages/home/index",
+    "pages/bill/index",
+    "pages/bookkeeping/index",
+    "pages/detail/index",
+    "pages/logs/logs",
+    "pages/chart/index",
+    "pages/register/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#33BAFF",
+    "navigationBarTitleText": "每日小计",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "明细",
+        "iconPath": "assets/tabbar/detail.png",
+        "selectedIconPath": "assets/tabbar/detail_h.png"
+      },
+      {
+        "pagePath": "pages/bookkeeping/index",
+        "text": "记账",
+        "iconPath": "assets/tabbar/add.png",
+        "selectedIconPath": "assets/tabbar/add.png"
+      },
+      {
+        "pagePath": "pages/bill/index",
+        "text": "账单",
+        "iconPath": "assets/tabbar/zhangd.png",
+        "selectedIconPath": "assets/tabbar/zhangd_h.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "assets/tabbar/mine.png",
+        "selectedIconPath": "assets/tabbar/mine_h.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

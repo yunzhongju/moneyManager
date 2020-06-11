@@ -1,0 +1,8 @@
+<!--pages/chart/index.wxml-->
+<text>pages/chart/index.wxml</text>
+      <!-- {
+        "pagePath": "pages/chart/index",
+        "text": "图表",
+        "iconPath": "assets/tabbar/chart.png",
+        "selectedIconPath": "assets/tabbar/chart_h.png"
+      }, -->

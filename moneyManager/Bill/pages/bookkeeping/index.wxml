@@ -1,0 +1,28 @@
+<!--pages/bookkeeping/index.wxml-->
+<view class="bookkeeping">
+  <view class="header">
+    <view class="info">
+      <text class="{{isactive==item.id?'active':''}}" bindtap="onClick" data-id="{{item.id}}" wx:for="{{typelist}}" wx:key="{{item.name}}">{{item.name}}</text>
+    </view>
+  </view>
+
+  <view class="content">
+    <view class="item" bindtap="onClickShow" data-id="{{item.id}}" wx:for="{{list}}">
+      <van-image width="50" height="50" round src="{{item.normal_url}}" />
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+
+  <van-overlay show="{{ show }}" bind:click="onClickHide">
+    <view class="wrapper">
+      <van-cell-group>
+        <van-field value="{{ money }}" bind:input="handleMoney" placeholder="请输入金额" label="金额" />
+        <van-field value="{{ desc}}" bind:input="handleDesc" placeholder="请输入备注" label="备注" />
+      </van-cell-group>
+      <view class="show-btn">
+        <van-button square type="info" size="large" bind:click="onCanlce">取消</van-button>
+        <van-button square type="info" size="large" bind:click="onComfirm">确定</van-button>
+      </view>
+    </view>
+  </van-overlay>
+</view>

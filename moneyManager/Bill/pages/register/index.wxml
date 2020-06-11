@@ -1,0 +1,13 @@
+<!--pages/register/index.wxml-->
+<view class="register">
+  <van-toast id="van-toast" />
+  <van-cell-group>
+    <van-field value="{{ username }}" bind:input="handleUsername" placeholder="请输入用户名" label="用户名" />
+    <van-field value="{{ password}}" type="password" bind:input="handlePassword" placeholder="请输入密码" label="密码" />
+    <van-field value="{{ surepwd}}" type="password" bind:input="handleSurePassword" placeholder="请输入确认" label="确认密码" />
+  </van-cell-group>
+
+  <view class="btns">
+    <van-button type="info" custom-class="registe" size="large" square bind:click="register">注册</van-button>
+  </view>
+</view>

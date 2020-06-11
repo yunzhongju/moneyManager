@@ -1,0 +1,39 @@
+<!--pages/bill/index.wxml-->
+<view class="bill">
+  <view class="header">
+    <view class="up">
+      <text class="txt-sty">结余</text>
+      <text class="year" bindtap="onClick">{{year}}年▼</text>
+    </view>
+    <text class="money">{{bill.jieyu}}</text>
+    <view class="down">
+      <view class="left hr">
+        <text class="txt-sty">收入</text>
+        <text>{{bill.income_sum}}</text>
+      </view>
+      <view class="left">
+        <text class="txt-sty">支出</text>
+        <text>{{bill.outcome_sum}}</text>
+      </view>
+    </view>
+
+    <van-popup show="{{ show }}" position="bottom" custom-style="height: 50%;">
+      <van-datetime-picker type="year-month" value="{{ currentDate }}" bind:cancel="onClose" bind:confirm="onSure" />
+    </van-popup>
+  </view>
+
+  <view class="list">
+    <view class="head">
+      <text>月份</text>
+      <text>收入</text>
+      <text>支出</text>
+      <text>结余</text>
+    </view>
+    <view class="item" wx:for="{{bill.list}}">
+      <text class="month">{{item.month>9?item.month:'0'+item.month}}</text>
+      <text>{{item.income}}</text>
+      <text>{{item.outcome}}</text>
+      <text>{{item.jieyu}}</text>
+    </view>
+  </view>
+</view>
